@@ -107,7 +107,7 @@ html, body {
     text-decoration: underline;
 }
 .layout_topicos {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: 1fr 1fr;
