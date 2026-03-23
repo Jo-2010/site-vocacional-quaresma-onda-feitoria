@@ -57,6 +57,7 @@ html, body {
 }
 .botao_comecar_encontro {
     text-decoration: none;
+    margin-top: 2rem;
     padding: 0.5rem;
     border-radius: 20px;
     text-align: center;
