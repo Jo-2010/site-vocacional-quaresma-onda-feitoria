@@ -66,7 +66,8 @@ html, body {
 }
 .botao_comecar_encontro:hover {
     transition: 0.3s;
-    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px black;
 }
 .ultimo_elementos_apresentacao {
     padding: 20px;
@@ -99,12 +100,13 @@ html, body {
 .links_topicos_encontro li:last-child {
     margin-bottom: 0;
 }
-.links_topicos_encontro a {
+.links_topicos_encontro a, .sessao_sobre_nos a, .sessao_uteis a {
     text-decoration: none;
     color: rgb(44, 90, 140);
 }
-.links_topicos_encontro a:hover {
+.links_topicos_encontro a:hover, .sessao_sobre_nos a:hover, .sessao_uteis a:hover {
     text-decoration: underline;
+    color: rgb(32, 65, 100);
 }
 .layout_topicos {
     margin-bottom: 5rem;
@@ -148,4 +150,95 @@ html, body {
 }
 .layout_topicos a:hover {
     text-decoration: underline;
+    color: rgb(209, 175, 22);
+}
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(254, 221, 80);
+}
+.sessao_links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sessao_sobre_nos {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sessao_sobre_nos span, .sessao_uteis span {
+    height: 33%;
+    margin: 0;
+    padding: 0;
+}
+.sessao_uteis {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.links_uteis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.sessao_redes_sociais {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.duas_sessoes_links_onda {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+i.fa-brands.fa-instagram.fa-xl {
+    color: rgb(193, 53, 132);
+}
+i.fa-brands.fa-facebook.fa-xl{
+    color: rgb(59, 89, 152);
+}
+.links_onda_feitoria, .links_outros  {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.logo_onda_tamanho_rodape {
+    height: 250px;
+    margin: 5rem 0 5rem 0;
+}
+.informacoes_finais {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: rgb(209, 175, 22);
+}
+.copy_produtor_github {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.produtor_github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.frase_final_quaresma {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
 }
