@@ -63,6 +63,10 @@ html, body {
     text-align: center;
     background-color: rgb(254, 221, 80);
     color: black;
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;
 }
 .botao_comecar_encontro:hover {
     transition: 0.3s;
@@ -100,11 +104,11 @@ html, body {
 .links_topicos_encontro li:last-child {
     margin-bottom: 0;
 }
-.links_topicos_encontro a, .sessao_sobre_nos a, .sessao_uteis a {
+.links_topicos_encontro a, .sessao_rodape a, .informacoes_finais a {
     text-decoration: none;
     color: rgb(44, 90, 140);
 }
-.links_topicos_encontro a:hover, .sessao_sobre_nos a:hover, .sessao_uteis a:hover {
+.links_topicos_encontro a:hover, .sessao_rodape a:hover, .informacoes_finais a:hover {
     text-decoration: underline;
     color: rgb(32, 65, 100);
 }
@@ -158,13 +162,14 @@ html, body {
     align-items: center;
     background-color: rgb(254, 221, 80);
 }
-.sessao_links {
+.sessao_rodape {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .sessao_sobre_nos {
     width: 33%;
+    border-right: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,6 +182,7 @@ html, body {
 }
 .sessao_uteis {
     width: 34%;
+    border-right: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -198,7 +204,7 @@ html, body {
 .duas_sessoes_links_onda {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 i.fa-brands.fa-instagram.fa-xl {
     color: rgb(193, 53, 132);
@@ -213,6 +219,13 @@ i.fa-brands.fa-facebook.fa-xl{
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.logo_onda_rodape_sessao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .logo_onda_tamanho_rodape {
     height: 250px;
@@ -236,9 +249,9 @@ i.fa-brands.fa-facebook.fa-xl{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .frase_final_quaresma {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 5rem;
 }
