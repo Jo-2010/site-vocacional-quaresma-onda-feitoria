@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -11,6 +10,9 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(44, 90, 140);
+}
+blockquote {
+    font-family: Arial, Helvetica, sans-serif;
 }
 .elementos_apresentacao {
     height: 100dvh;
@@ -28,6 +30,7 @@ html, body {
     align-items: center;
     text-align: center;
     color: white;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .logo_onda {
     height: 100px;
@@ -49,11 +52,16 @@ html, body {
     align-items: center;
     text-align: center;
     color: white;
+    font-family: 'Cinzel', 'Times New Roman', serif;
 }
 .titulo_encontro {
+    margin: 0;
     font-size: 5rem;
-    line-height: 1.1;
+    line-height: 1.4;
     text-align: center;
+}
+.texto_organizado_por {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .botao_comecar_encontro {
     text-decoration: none;
@@ -67,11 +75,13 @@ html, body {
     -moz-user-select: none;    
     -ms-user-select: none;     
     user-select: none;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .botao_comecar_encontro:hover {
     transition: 0.3s;
     transform: translateY(-2px);
     box-shadow: 0 5px 10px black;
+    opacity: 0.85;
 }
 .ultimo_elementos_apresentacao {
     padding: 20px;
@@ -79,6 +89,7 @@ html, body {
     align-items: center;
     font-size: 1.5rem;
     color: white;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .div_links_topicos_encontro {
     border-radius: 10px;
@@ -89,6 +100,9 @@ html, body {
     align-items: center;
     background-color: rgb(254, 221, 80);
 }
+.div_links_topicos_encontro h3 {
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+}
 .links_topicos_encontro {
     list-style-type: none;
     padding: 0;
@@ -97,6 +111,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .links_topicos_encontro li {
     margin-bottom: 10px;
@@ -104,11 +119,11 @@ html, body {
 .links_topicos_encontro li:last-child {
     margin-bottom: 0;
 }
-.links_topicos_encontro a, .sessao_rodape a, .informacoes_finais a {
+.links_topicos_encontro a, .sessao_rodape_links a, .informacoes_finais a {
     text-decoration: none;
     color: rgb(44, 90, 140);
 }
-.links_topicos_encontro a:hover, .sessao_rodape a:hover, .informacoes_finais a:hover {
+.links_topicos_encontro a:hover, .sessao_rodape_links a:hover, .informacoes_finais a:hover {
     text-decoration: underline;
     color: rgb(32, 65, 100);
 }
@@ -126,6 +141,7 @@ html, body {
 .layout_topicos h1 {
     grid-area: tituloTopico;
     text-align: center;
+    font-family: 'Cinzel', 'Times New Roman', serif;
 }
 .layout_topicos div {
     grid-area: paragrafosTopico;
@@ -133,6 +149,7 @@ html, body {
     align-self: center;
     justify-self: center;
     line-height: 1.4;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .layout_topicos img {
     grid-area: imagemTopico;
@@ -151,6 +168,7 @@ html, body {
     align-self: center;
     color: rgb(254, 221, 80);
     text-decoration: none;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .layout_topicos a:hover {
     text-decoration: underline;
@@ -162,10 +180,16 @@ html, body {
     align-items: center;
     background-color: rgb(254, 221, 80);
 }
-.sessao_rodape {
+.rodape h2, h3 {
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+}
+.sessao_rodape_links {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.sessao_rodape_links a {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .sessao_sobre_nos {
     width: 33%;
@@ -244,6 +268,7 @@ i.fa-brands.fa-facebook.fa-xl{
     margin-top: 2rem;
     display: flex;
     justify-content: space-around;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 .produtor_github {
     display: flex;
@@ -252,6 +277,12 @@ i.fa-brands.fa-facebook.fa-xl{
     gap: 20px;
 }
 .frase_final_quaresma {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1.3rem;
+    line-height: 1.4;
     margin-bottom: 5rem;
 }
