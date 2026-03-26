@@ -174,14 +174,39 @@ blockquote {
     text-decoration: underline;
     color: rgb(209, 175, 22);
 }
+.sessao_fontes_referencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sessao_fontes_referencias h2 {
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    color: white;
+}
+.sessao_fontes_referencias ul {
+    list-style-type: none;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+.sessao_fontes_referencias li {
+    margin-bottom: 10px;
+}
+.sessao_fontes_referencias a {
+    color: rgb(254, 221, 80);
+    text-decoration: none;
+}
+.sessao_fontes_referencias a:hover {
+    text-decoration: underline;
+}
 .rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(254, 221, 80);
 }
-.rodape h2, h3 {
+.rodape h2 {
     font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    white-space: nowrap;
 }
 .sessao_rodape_links {
     width: 100%;
@@ -225,24 +250,11 @@ blockquote {
     justify-content: space-between;
     align-items: center;
 }
-.duas_sessoes_links_onda {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 i.fa-brands.fa-instagram.fa-xl {
     color: rgb(193, 53, 132);
 }
 i.fa-brands.fa-facebook.fa-xl{
     color: rgb(59, 89, 152);
-}
-.links_onda_feitoria, .links_outros  {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 .logo_onda_rodape_sessao {
     width: 100%;
@@ -253,7 +265,7 @@ i.fa-brands.fa-facebook.fa-xl{
 }
 .logo_onda_tamanho_rodape {
     height: 250px;
-    margin: 5rem 0 5rem 0;
+    margin: 2rem 0 2rem 0;
 }
 .informacoes_finais {
     width: 100%;
