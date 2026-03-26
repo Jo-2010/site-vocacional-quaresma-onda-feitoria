@@ -36,10 +36,10 @@ blockquote {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 0.25rem;
+    gap: 10px;
     color: white;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.6rem, 2vw, 1.2rem);
+    font-size: clamp(0.65rem, 2vw, 1.2rem);
 }
 .logo_onda {
     height: clamp(60px, 10vw, 120px);
@@ -71,7 +71,7 @@ blockquote {
 }
 .texto_organizado_por {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.6rem, 2vw, 1.2rem);
+    font-size: clamp(0.65rem, 2vw, 1.2rem);
 }
 .div_links_topicos_encontro {
     border-radius: 10px;
