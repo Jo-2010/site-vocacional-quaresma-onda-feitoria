@@ -65,7 +65,7 @@ blockquote {
 }
 .titulo_encontro {
     margin: 0;
-    font-size: clamp(3.25rem, 5vw, 6rem);
+    font-size: clamp(2.5rem, 5vw, 6rem);
     text-align: center;
 }
 .texto_organizado_por {
