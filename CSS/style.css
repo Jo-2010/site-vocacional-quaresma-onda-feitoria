@@ -12,15 +12,22 @@ html, body {
     background-color: rgb(44, 90, 140);
 }
 blockquote {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-style: italic;
 }
 .elementos_apresentacao {
     height: 100dvh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+}
+.elementos_apresentacao > span {
+    height: 100px;
+    width: 50px;
+    margin: 0;
+    padding: 15px;
 }
 .cabecalho {
     width: 100%;
@@ -29,11 +36,13 @@ blockquote {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    gap: 0.25rem;
     color: white;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
 }
 .logo_onda {
-    height: 100px;
+    height: clamp(60px, 10vw, 120px);
     border-radius: 50%;
 }
 .informacoes_encontro_cabecalho {
@@ -56,62 +65,40 @@ blockquote {
 }
 .titulo_encontro {
     margin: 0;
-    font-size: 5rem;
+    font-size: clamp(3.25rem, 5vw, 6rem);
     line-height: 1.4;
     text-align: center;
 }
 .texto_organizado_por {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-}
-.botao_comecar_encontro {
-    text-decoration: none;
-    margin-top: 2rem;
-    padding: 0.8rem;
-    border-radius: 25px;
-    text-align: center;
-    background-color: rgb(254, 221, 80);
-    color: black;
-    -webkit-user-select: none; 
-    -moz-user-select: none;    
-    -ms-user-select: none;     
-    user-select: none;
-    font-family: "Nunito", Arial, Helvetica, sans-serif;
-}
-.botao_comecar_encontro:hover {
-    transition: 0.3s;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px black;
-    opacity: 0.85;
-}
-.ultimo_elementos_apresentacao {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    color: white;
-    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
 }
 .div_links_topicos_encontro {
     border-radius: 10px;
     margin: 0 15px 30px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: rgb(254, 221, 80);
 }
 .div_links_topicos_encontro h3 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    font-size: clamp(1rem, 2.2vw, 1.17rem);
+    text-align: center;
 }
 .links_topicos_encontro {
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     margin-bottom: 1.33rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 .links_topicos_encontro li {
     margin-bottom: 10px;
@@ -129,31 +116,21 @@ blockquote {
 }
 .layout_topicos {
     margin-bottom: 5rem;
-    display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    'tituloTopico tituloTopico'
-    'paragrafosTopico imagemTopico'
-    'hyperlinkTopicos hyperlinkTopicos';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
 }
 .layout_topicos h1 {
-    grid-area: tituloTopico;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     text-align: center;
     font-family: 'Cinzel', 'Times New Roman', serif;
 }
-.layout_topicos div {
-    grid-area: paragrafosTopico;
-    width: 90%;
-    align-self: center;
-    justify-self: center;
-    line-height: 1.4;
-    font-family: "Nunito", Arial, Helvetica, sans-serif;
-}
 .layout_topicos img {
-    grid-area: imagemTopico;
     height: 300px;
+    margin-bottom: 2rem;
     aspect-ratio: 16 / 9;
     border: 5px solid rgb(254, 221, 80);
     border-radius: 10px;
@@ -162,13 +139,20 @@ blockquote {
     align-self: center;
     justify-self: center;
 }
+.layout_topicos div {
+    width: 90%;
+    line-height: 1.4;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
 .layout_topicos a {
-    grid-area: hyperlinkTopicos;
+    margin-top: 2rem;
     justify-self: center;
     align-self: center;
     color: rgb(254, 221, 80);
     text-decoration: none;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 .layout_topicos a:hover {
     text-decoration: underline;
@@ -185,8 +169,10 @@ blockquote {
     color: white;
 }
 .sessao_fontes_referencias ul {
+    padding: 20px;
     list-style-type: none;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 .sessao_fontes_referencias li {
     margin-bottom: 10px;
@@ -211,14 +197,16 @@ blockquote {
 .sessao_rodape_links {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .sessao_rodape_links a {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 .sessao_sobre_nos {
-    width: 33%;
-    border-right: 1px solid black;
+    width: 300px;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -230,8 +218,8 @@ blockquote {
     padding: 0;
 }
 .sessao_uteis {
-    width: 34%;
-    border-right: 1px solid black;
+    width: 300px;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -244,7 +232,7 @@ blockquote {
     gap: 10px;
 }
 .sessao_redes_sociais {
-    width: 33%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,27 +262,38 @@ i.fa-brands.fa-facebook.fa-xl{
     align-items: center;
     gap: 5rem;
     background-color: rgb(209, 175, 22);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
-.copy_produtor_github {
+.copy_produtor {
     width: 100%;
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
-.produtor_github {
+.copy {
+    text-align: center;
+    margin: 0 0.25rem 2rem 0.25rem;
+}
+.produtor {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 .frase_final_quaresma {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1vw, 1.1rem);
     line-height: 1.4;
     margin-bottom: 5rem;
+}
+@media (max-width: 600px){
+    .layout_topicos img {
+    width: 90%;
+    }
 }
