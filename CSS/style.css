@@ -39,7 +39,7 @@ blockquote {
     gap: 10px;
     color: white;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.65rem, 2vw, 1.2rem);
+    font-size: clamp(0.72rem, 2vw, 1.2rem);
 }
 .logo_onda {
     height: clamp(60px, 10vw, 120px);
@@ -71,7 +71,7 @@ blockquote {
 .texto_organizado_por {
     margin: 0 0.25rem 0 0.25rem;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.65rem, 2vw, 1.2rem);
+    font-size: clamp(0.72rem, 2vw, 1.2rem);
 }
 .div_links_topicos_encontro {
     border-radius: 10px;
@@ -98,7 +98,7 @@ blockquote {
     flex-direction: column;
     align-items: flex-start;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.98rem, 2vw, 1.2rem);
 }
 .links_topicos_encontro li {
     margin-bottom: 10px;
@@ -129,9 +129,14 @@ blockquote {
     font-family: 'Cinzel', 'Times New Roman', serif;
     font-size: clamp(1.8rem, 4vw, 3rem);
 }
+.layout_topicos h2 {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+}
 .layout_topicos img {
     height: 300px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     aspect-ratio: 16 / 9;
     border: 5px solid rgb(254, 221, 80);
     border-radius: 10px;
@@ -144,7 +149,7 @@ blockquote {
     width: 90%;
     line-height: 1.4;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.98rem, 2vw, 1.2rem);
 }
 .layout_topicos a {
     margin-top: 2rem;
@@ -153,7 +158,7 @@ blockquote {
     color: rgb(254, 221, 80);
     text-decoration: none;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.98rem, 2vw, 1.2rem);
 }
 .layout_topicos a:hover {
     text-decoration: underline;
@@ -173,7 +178,7 @@ blockquote {
     padding: 20px;
     list-style-type: none;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
 }
 .sessao_fontes_referencias li {
     margin-bottom: 10px;
@@ -184,6 +189,7 @@ blockquote {
 }
 .sessao_fontes_referencias a:hover {
     text-decoration: underline;
+    color: rgb(209, 175, 22);
 }
 .rodape {
     display: flex;
@@ -203,7 +209,7 @@ blockquote {
 }
 .sessao_rodape_links a {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
 }
 .sessao_sobre_nos {
     width: 300px;
@@ -263,7 +269,7 @@ i.fa-brands.fa-facebook.fa-xl{
     align-items: center;
     gap: 5rem;
     background-color: rgb(209, 175, 22);
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
 }
 .copy_produtor {
     width: 100%;
