@@ -69,6 +69,7 @@ blockquote {
     text-align: center;
 }
 .texto_organizado_por {
+    margin: 0 0.25rem 0 0.25rem;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
     font-size: clamp(0.65rem, 2vw, 1.2rem);
 }
@@ -126,6 +127,7 @@ blockquote {
     margin-right: 0.25rem;
     text-align: center;
     font-family: 'Cinzel', 'Times New Roman', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
 }
 .layout_topicos img {
     height: 300px;
@@ -251,7 +253,7 @@ i.fa-brands.fa-facebook.fa-xl{
     align-items: center;
 }
 .logo_onda_tamanho_rodape {
-    height: 250px;
+    height: clamp(130px, 20vw, 250px);
     margin: 2rem 0 2rem 0;
 }
 .informacoes_finais {
