@@ -11,6 +11,9 @@ html, body {
     padding: 0;
     background-color: rgb(44, 90, 140);
 }
+strong {
+    font-style: none;
+}
 blockquote {
     font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     font-style: italic;
@@ -122,14 +125,20 @@ blockquote {
     align-items: center;
     color: white;
 }
-.layout_topicos h1 {
+.layout_topicos article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.layout_topicos h2 {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
     text-align: center;
     font-family: 'Cinzel', 'Times New Roman', serif;
     font-size: clamp(1.8rem, 4vw, 3rem);
 }
-.layout_topicos h2 {
+.layout_topicos h3 {
     margin-top: 3rem;
     text-align: center;
     font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
@@ -145,7 +154,7 @@ blockquote {
     align-self: center;
     justify-self: center;
 }
-.layout_topicos div {
+.layout_topicos .conteudo_topico {
     width: 90%;
     line-height: 1.4;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
