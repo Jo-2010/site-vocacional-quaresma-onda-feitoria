@@ -11,6 +11,10 @@ html, body {
     padding: 0;
     background-color: rgb(44, 90, 140);
 }
+figure {
+    margin: 0;
+    padding: 0;
+}
 strong {
     font-style: none;
 }
@@ -143,7 +147,11 @@ blockquote {
     text-align: center;
     font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
 }
-.layout_topicos img {
+.layout_topicos figure {
+    display: flex;
+    justify-content: center;
+}
+.layout_topicos figure > img {
     height: 300px;
     margin-bottom: 3rem;
     aspect-ratio: 16 / 9;
@@ -309,7 +317,7 @@ i.fa-brands.fa-facebook.fa-xl{
     margin-bottom: 5rem;
 }
 @media (max-width: 600px){
-    .layout_topicos img {
-    width: 90%;
+    .layout_topicos figure img {
+        width: 90%;
     }
 }
