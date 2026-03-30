@@ -13,15 +13,19 @@
         orphans: 3;
         widows: 3;
     }
-    p {
-        orphans: 2;
-        widows: 2;
+    p, blockquote {
+        orphans: 3;
+        widows: 3;
     }
     a {
         filter: grayscale(100%) !important;
     }
     a:after {
         content: " (" attr(href) ")";
+    }
+    layout_topicos {
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
     .div_links_topicos_encontro {
         display: none !important;
