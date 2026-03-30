@@ -9,6 +9,13 @@
     }
     h2, h3 {
         page-break-after: avoid;
+        break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+    p {
+        orphans: 2;
+        widows: 2;
     }
     a {
         filter: grayscale(100%) !important;
