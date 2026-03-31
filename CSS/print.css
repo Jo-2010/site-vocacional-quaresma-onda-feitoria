@@ -4,6 +4,9 @@
         color: black;
         font-size: 12pt; 
     }
+    .cabecalho, h1, h2, h3, p, a, ul, span, .sessao_fontes_referencias h2, .sessao_fontes_referencias a {
+        color: black;
+    }
     img, blockquote {
         page-break-inside: avoid;
     }
