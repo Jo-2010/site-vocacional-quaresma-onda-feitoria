@@ -20,9 +20,6 @@
         orphans: 3;
         widows: 3;
     }
-    a {
-        filter: grayscale(100%) !important;
-    }
     a:after {
         content: " (" attr(href) ")";
     }
