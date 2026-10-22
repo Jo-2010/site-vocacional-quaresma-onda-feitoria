@@ -9,7 +9,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(44, 90, 140);
+    background-color: #184061;
 }
 figure {
     margin: 0;
@@ -50,7 +50,6 @@ blockquote {
 }
 .logo_onda {
     height: clamp(60px, 10vw, 120px);
-    border-radius: 50%;
 }
 .informacoes_encontro_cabecalho {
     display: flex;
@@ -278,6 +277,7 @@ i.fa-brands.fa-facebook.fa-xl{
 .logo_onda_tamanho_rodape {
     height: clamp(130px, 20vw, 250px);
     margin: 2rem 0 2rem 0;
+    border-radius: 50%;
 }
 .informacoes_finais {
     width: 100%;

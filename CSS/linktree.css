@@ -4,12 +4,186 @@
 
 html {
     scroll-behavior: smooth;
+    padding: 1rem;
+    overflow-x: hidden;
 }
 
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #184061;
+}
+
+.logo_onda {
+    height: clamp(60px, 10vw, 120px);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.conteudo_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container_links {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.img_secao_links_oval {
+    height: clamp(60px, 10vw, 120px);
+    border-radius: 50%;
+}
+
+.container_links > h2 {
+    width: 80%;
+    margin: 0.5rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: #FFFFFF;
+}
+
+.container_links > p {
+    margin: 0.3rem 0 0.75rem 0;
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.98rem, 2vw, 1.2rem);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container_links > ul {
+    /*border: 1px solid black;*/
+    height: 70%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_links > ul.links_vocacional {
+    gap: 7rem;
+}
+
+.container_links > ul.links_onda {
+    gap: 4rem;
+}
+
+.container_links > ul.links_dev {
+    gap: 3rem;
+}
+
+.container_links li {
+    width: 50%;
+    position: relative;
+    list-style-type: none;
+}
+
+.container_links a {
+    padding-left: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px #000000;
+    width: 100%;
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: clamp(0.98rem, 2vw, 1.2rem);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container_links a:hover, .container_links a:focus {
+    transition: 0.3s;
+    transform: scale(1.02);
+    box-shadow: 10px 10px 10px #000000;
+    outline: none;
+}
+
+.container_links a i {
+    position: absolute;
+    left: 1.5rem; /* Controla a distância do ícone em relação à borda esquerda */
+
+    /* Garante o alinhamento vertical perfeito no meio do botão */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container_links a span {
+    /* Cria uma área de escape nas laterais para o texto nunca bater nas bordas ou no ícone */
+    padding: 0 2.5rem;
+
+    /* Garante que o texto continue se comportando bem no alinhamento */
+    display: inline-block;
+}
+
+.cor_links_vocacional {
+    background-color: #621012;
+}
+
+.cor_links_onda {
+    background-color: #385C8C;
+}
+
+.cor_links_dev {
+    background-color: #1B8D3D;
+}
+
+.imagem_associada_sessao_links {
+    position: absolute;
+    opacity: 0.5;
+}
+
+.img_nossa_senhora_gracas {
+    right: 0;
+    top: 50%;
+    transform: scaleX(-1) translate(-50%, -50%);
+}
+
+.img_santa_teresinha {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img_carlo_acutis {
+    right: 0;
+    top: 50%;
+    transform: translate(30%, -50%);
+}
+
+i.fa-brands.fa-instagram.fa-xl {
+    color: #C13584;
+}
+
+i.fa-brands.fa-facebook.fa-xl {
+    color: #759EFF;
+}
+
+i.fa-brands.fa-github.fa-xl {
+    color: #000000;
+}
+
+i.fa-brands.fa-linkedin.fa-xl {
+    color: #0A66C2;
 }
