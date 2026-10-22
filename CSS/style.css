@@ -256,6 +256,7 @@ blockquote {
 }
 .sessao_redes_sociais {
     width: 300px;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -266,6 +267,12 @@ i.fa-brands.fa-instagram.fa-xl {
 }
 i.fa-brands.fa-facebook.fa-xl{
     color: rgb(59, 89, 152);
+}
+i.fa-brands.fa-github.fa-xl {
+    color: #000000;
+}
+i.fa-brands.fa-linkedin.fa-xl {
+    color: #0A66C2;
 }
 .logo_onda_rodape_sessao {
     width: 100%;
