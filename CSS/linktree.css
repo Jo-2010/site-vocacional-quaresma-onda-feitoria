@@ -2,9 +2,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 main {
     width: 100%;
     max-width: 100%;
-    padding: 1rem;
+
 }
 
 blockquote {
@@ -288,6 +291,7 @@ i.fa-brands.fa-linkedin.fa-xl {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-around;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
     font-weight: 600;

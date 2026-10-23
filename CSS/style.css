@@ -300,6 +300,7 @@ i.fa-brands.fa-linkedin.fa-xl {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-around;
     font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
