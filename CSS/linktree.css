@@ -7,19 +7,23 @@ html {
     overflow-x: hidden;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+body {
+    min-height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    width: 100%;
     background-color: #184061;
 }
 
 main {
+    width: 100%;
+    max-width: 100%;
     padding: 1rem;
+}
+
+blockquote {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .logo_onda {
@@ -30,20 +34,23 @@ main {
 }
 
 .conteudo_principal {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
 }
 
 .container_links {
-    height: 100dvh;
+    min-height: 100dvh;
+    height: auto;
     width: 100%;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    isolation: isolate;
 }
 
 .img_secao_links_oval {
@@ -69,75 +76,74 @@ main {
 }
 
 .container_links > ul {
-    /*border: 1px solid black;*/
-    height: 70%;
     width: 100%;
-    margin: 0;
+    margin: 3rem;
     padding: 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .container_links > ul.links_vocacional {
-    gap: 7rem;
+    gap: clamp(1.5rem, 5vh, 4rem);
 }
 
 .container_links > ul.links_onda {
-    gap: 4rem;
+    gap: clamp(1rem, 3vh, 2.5rem);
 }
 
 .container_links > ul.links_dev {
-    gap: 3rem;
+    gap: clamp(1rem, 3vh, 2rem);
 }
 
 .container_links li {
-    width: 50%;
-    position: relative;
-    list-style-type: none;
+    width: min(100%, 32rem);
+    list-style: none;
 }
 
 .container_links a {
-    padding-left: 20px;
-    border-radius: 30px;
-    box-shadow: 10px 10px #000000;
     width: 100%;
+    min-width: 0;
     padding: 1rem;
-    display: inline-flex;
+    border-radius: 30px;
+    box-shadow: 6px 6px #000000;
+
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.75rem;
+
     position: relative;
     text-decoration: none;
     text-align: center;
-    font-size: clamp(0.98rem, 2vw, 1.2rem);
+    overflow-wrap: anywhere;
+
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #FFFFFF;
 }
 
-.container_links a:hover, .container_links a:focus {
-    transition: 0.3s;
-    transform: scale(1.02);
-    box-shadow: 10px 10px 10px #000000;
-    outline: none;
-}
-
 .container_links a i {
-    position: absolute;
-    left: 1.5rem; /* Controla a distância do ícone em relação à borda esquerda */
-
-    /* Garante o alinhamento vertical perfeito no meio do botão */
-    top: 50%;
-    transform: translateY(-50%);
+    position: static;
+    transform: none;
+    flex-shrink: 0;
 }
 
 .container_links a span {
-    /* Cria uma área de escape nas laterais para o texto nunca bater nas bordas ou no ícone */
-    padding: 0 2.5rem;
+    min-width: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
 
-    /* Garante que o texto continue se comportando bem no alinhamento */
-    display: inline-block;
+.container_links a:hover,
+.container_links a:focus-visible {
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(1.02);
+    box-shadow: 6px 6px 10px #000000;
 }
 
 .cor_links_vocacional {
@@ -154,25 +160,26 @@ main {
 
 .imagem_associada_sessao_links {
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.75;
+    z-index: -1;
 }
 
 .img_nossa_senhora_gracas {
     right: 0;
     top: 50%;
-    transform: scaleX(-1) translate(-50%, -50%);
+    transform: scaleX(-1) translate(-40%, -50%);
 }
 
 .img_santa_teresinha {
     left: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
 }
 
 .img_carlo_acutis {
     right: 0;
     top: 50%;
-    transform: translate(30%, -50%);
+    transform: translate(25%, -50%);
 }
 
 i.fa-brands.fa-instagram.fa-xl {
@@ -183,8 +190,12 @@ i.fa-brands.fa-facebook.fa-xl {
     color: #759EFF;
 }
 
-i.fa-brands.fa-github.fa-xl {
+i.fa-brands.fa-github.fa-xl, i.fa-brands.fa-square-x-twitter.fa-xl {
     color: #000000;
+}
+
+i.fa-brands.fa-duolingo.fa-xl {
+    color: #58CC02;
 }
 
 i.fa-brands.fa-linkedin.fa-xl {
@@ -193,6 +204,7 @@ i.fa-brands.fa-linkedin.fa-xl {
 
 .rodape {
     width: 100%;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,12 +226,15 @@ i.fa-brands.fa-linkedin.fa-xl {
 .sessao_rodape_links a {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
     font-size: clamp(0.95rem, 2vw, 1.2rem);
+    font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
     color: #2C5A8C;
 }
 
 .sessao_rodape_links a:hover {
     text-decoration: underline;
+    color: #204164;
 }
 
 .sessao_uteis {
@@ -242,4 +257,74 @@ i.fa-brands.fa-linkedin.fa-xl {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+}
+
+.logo_onda_rodape_sessao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_onda_tamanho_rodape {
+    height: clamp(130px, 20vw, 250px);
+    margin: 2rem 0 2rem 0;
+    border-radius: 50%;
+}
+
+.informacoes_finais {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: rgb(209, 175, 22);
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
+}
+
+.copy_produtor {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.copy {
+    text-align: center;
+    margin: 0 0.25rem 2rem 0.25rem;
+}
+
+.produtor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.integrantes_vocacional_2026 {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+.integrantes_vocacional_2026 > span:last-child {
+    text-align: center;
+}
+
+.frase_final_quaresma {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 1vw, 1.1rem);
+    line-height: 1.4;
+    margin-bottom: 5rem;
 }
