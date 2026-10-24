@@ -30,7 +30,7 @@ blockquote {
 }
 
 .logo_onda {
-    height: clamp(60px, 10vw, 120px);
+    height: clamp(80px, 12vw, 130px);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -82,7 +82,6 @@ blockquote {
     width: 100%;
     margin: 3rem;
     padding: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,18 +110,15 @@ blockquote {
     padding: 1rem;
     border-radius: 30px;
     box-shadow: 6px 6px #000000;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
-
     position: relative;
     text-decoration: none;
     text-align: center;
     overflow-wrap: anywhere;
-
     font-size: clamp(0.95rem, 2vw, 1.2rem);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -142,11 +138,15 @@ blockquote {
     text-align: center;
 }
 
-.container_links a:hover,
-.container_links a:focus-visible {
+.container_links a:hover, .container_links a:focus-visible {
     transition: transform 0.3s, box-shadow 0.3s;
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow: 6px 6px 10px #000000;
+}
+
+.container_links a:focus-visible {
+    outline: none;
+    border: 2px solid #FFFFFF;
 }
 
 .cor_links_vocacional {
@@ -154,11 +154,11 @@ blockquote {
 }
 
 .cor_links_onda {
-    background-color: #385C8C;
+    background-color: #28578A;
 }
 
 .cor_links_dev {
-    background-color: #1B8D3D;
+    background-color: #35AA42;
 }
 
 .imagem_associada_sessao_links {
@@ -211,7 +211,7 @@ i.fa-brands.fa-linkedin.fa-xl {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(254, 221, 80);
+    background-color: #FBD342;
 }
 
 .rodape h2 {
@@ -232,12 +232,13 @@ i.fa-brands.fa-linkedin.fa-xl {
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
-    color: #2C5A8C;
+    color: #28578A;
 }
 
-.sessao_rodape_links a:hover {
+.sessao_rodape_links a:hover, .sessao_rodape_links a:focus-visible {
     text-decoration: underline;
-    color: #204164;
+    color: #184061;
+    outline: none;
 }
 
 .sessao_uteis {
@@ -273,7 +274,6 @@ i.fa-brands.fa-linkedin.fa-xl {
 .logo_onda_tamanho_rodape {
     height: clamp(130px, 20vw, 250px);
     margin: 2rem 0 2rem 0;
-    border-radius: 50%;
 }
 
 .informacoes_finais {
